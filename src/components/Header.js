@@ -77,13 +77,13 @@ export default function SearchAppBar() {
             onKeyDown={toggleDrawer(false)}
           >
             <List>
-              <ListItem button component={Link} to="/">
+              <ListItem button component={Link} to="/react-portfolio/">
                 <ListItemIcon>
                   <InfoIcon />
                 </ListItemIcon>
                 <ListItemText primary="About Me" />
               </ListItem>
-              <ListItem button component={Link} to="/portfolio">
+              <ListItem button component={Link} to="/react-portfolio/portfolio">
                 <ListItemIcon>
                   <LibraryBooksIcon />
                 </ListItemIcon>

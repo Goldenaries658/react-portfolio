@@ -42,8 +42,8 @@ export default function App() {
           <br />
           <Container className={classes.root} component={Paper}>
             <Switch>
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/" component={AboutMe} />
+              <Route path="/react-portfolio/portfolio" component={Portfolio} />
+              <Route path="/react-portfolio" component={AboutMe} />
             </Switch>
           </Container>
         </Router>
