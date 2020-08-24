@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 import Header from './components/Header';
 import AboutMe from './pages/AboutMe';
 import purple from '@material-ui/core/colors/purple';
