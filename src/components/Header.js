@@ -22,10 +22,6 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
   },
   list: {
     width: 250,
@@ -64,7 +60,7 @@ export default function SearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Houston
+            Houston.
           </Typography>
         </Toolbar>
         <SwipeableDrawer
