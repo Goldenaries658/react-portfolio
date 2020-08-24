@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
 import purple from '@material-ui/core/colors/purple';
 import {
   ThemeProvider,
@@ -38,7 +39,7 @@ export default function App() {
         <Header />
         <br />
         <Container className={classes.root} component={Paper}>
-          <AboutMe />
+          <Portfolio />
         </Container>
       </ThemeProvider>
     </div>
