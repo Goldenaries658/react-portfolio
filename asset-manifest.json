@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e2f831a1.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.6e294ee2.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.6e294ee2.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.213b1880.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.213b1880.js.map",
+    "static/js/2.47999555.chunk.js": "/react-portfolio/static/js/2.47999555.chunk.js",
+    "static/js/2.47999555.chunk.js.map": "/react-portfolio/static/js/2.47999555.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "precache-manifest.459a5b4294abaae8fd3126efba39940c.js": "/react-portfolio/precache-manifest.459a5b4294abaae8fd3126efba39940c.js",
+    "service-worker.js": "/react-portfolio/service-worker.js",
+    "static/css/main.e2f831a1.chunk.css.map": "/react-portfolio/static/css/main.e2f831a1.chunk.css.map",
+    "static/js/2.47999555.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.47999555.chunk.js.LICENSE.txt",
+    "static/media/fitness-buddy.webp": "/react-portfolio/static/media/fitness-buddy.d328d74b.webp",
+    "static/media/javascript-quiz.webp": "/react-portfolio/static/media/javascript-quiz.de5b49be.webp",
+    "static/media/profile-pic.webp": "/react-portfolio/static/media/profile-pic.11c1f357.webp",
+    "static/media/the-music-app.webp": "/react-portfolio/static/media/the-music-app.5319a906.webp",
+    "static/media/App.css": "/react-portfolio/static/media/topography.a08a19ee.svg",
+    "static/media/weather-app.webp": "/react-portfolio/static/media/weather-app.307515f8.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.213b1880.js",
+    "static/js/2.47999555.chunk.js",
+    "static/css/main.e2f831a1.chunk.css",
+    "static/js/main.6e294ee2.chunk.js"
+  ]
+}
