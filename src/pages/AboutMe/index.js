@@ -4,6 +4,7 @@ import Image from 'material-ui-image';
 import profilePic from './images/profile-pic.webp';
 import Grid from '@material-ui/core/Grid';
 import BioSection from './BioSection';
+import SkillSection from './SkillSection';
 import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
@@ -25,6 +26,10 @@ export default function AboutMe() {
         </Grid>
         <Grid item xs={12} md={9} className={classes.bio}>
           <BioSection />
+        </Grid>
+        <Grid item xs={12}>
+          <br />
+          <SkillSection />
         </Grid>
       </Grid>
     </React.Fragment>
