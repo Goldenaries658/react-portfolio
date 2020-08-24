@@ -12,6 +12,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import InfoIcon from '@material-ui/icons/Info';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -76,14 +77,18 @@ export default function SearchAppBar() {
             onKeyDown={toggleDrawer(false)}
           >
             <List>
-              {['About Me', 'Portfolio'].map((text, index) => (
-                <ListItem button key={text}>
-                  <ListItemIcon>
-                    {index === 0 ? <InfoIcon /> : <LibraryBooksIcon />}
-                  </ListItemIcon>
-                  <ListItemText primary={text} />
-                </ListItem>
-              ))}
+              <ListItem button component={Link} to="/">
+                <ListItemIcon>
+                  <InfoIcon />
+                </ListItemIcon>
+                <ListItemText primary="About Me" />
+              </ListItem>
+              <ListItem button component={Link} to="/portfolio">
+                <ListItemIcon>
+                  <LibraryBooksIcon />
+                </ListItemIcon>
+                <ListItemText primary="Portfolio" />
+              </ListItem>
             </List>
           </div>
         </SwipeableDrawer>

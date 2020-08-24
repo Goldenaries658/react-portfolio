@@ -12,6 +12,7 @@ import {
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const theme = createMuiTheme({
   palette: {
@@ -36,11 +37,16 @@ export default function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
-        <br />
-        <Container className={classes.root} component={Paper}>
-          <Portfolio />
-        </Container>
+        <Router>
+          <Header />
+          <br />
+          <Container className={classes.root} component={Paper}>
+            <Switch>
+              <Route path="/portfolio" component={Portfolio} />
+              <Route path="/" component={AboutMe} />
+            </Switch>
+          </Container>
+        </Router>
       </ThemeProvider>
     </div>
   );
