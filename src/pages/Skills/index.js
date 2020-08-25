@@ -9,7 +9,7 @@ import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
   skills: {
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
   },
   title: {
     paddingLeft: '16px',
@@ -30,11 +30,14 @@ const skills = {
   learning: ['Headless Architecture', 'Improving React skills', 'Redux'],
 };
 
-export default function SkillSection() {
+export default function Skills() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
+      <Typography variant="h3">Skills.</Typography>
+      <hr />
+      <br />
       <Grid container className={classes.skills}>
         <Grid item xs={12} md={4}>
           <Typography color="secondary" variant="h5" className={classes.title}>
