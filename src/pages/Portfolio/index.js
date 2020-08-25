@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
-import Typography from '@material-ui/core/Typography';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
@@ -17,11 +16,9 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
   },
   gridList: {
+    marginTop: '12px',
     width: 1100,
-    height: 820,
-  },
-  icon: {
-    // color: 'rgba(255, 255, 255, 0.54)',
+    height: '80vh',
   },
 }));
 
@@ -38,9 +35,6 @@ export default withWidth()(function Portfolio({ width }) {
 
   return (
     <React.Fragment>
-      <Typography variant="h3">Portfolio.</Typography>
-      <hr />
-      <br />
       <div className={classes.root}>
         <GridList
           cellHeight={400}
