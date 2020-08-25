@@ -35,9 +35,6 @@ export default function Skills() {
 
   return (
     <React.Fragment>
-      <Typography variant="h3">Skills.</Typography>
-      <hr />
-      <br />
       <Grid container className={classes.skills}>
         <Grid item xs={12} md={4}>
           <Typography color="secondary" variant="h5" className={classes.title}>

@@ -25,8 +25,7 @@ export default function BioSection() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Typography variant="h4">Jacob Houston.</Typography>
-      <br />
+      <Typography color='secondary' variant="h4" paragraph={true}>Jacob Houston.</Typography>
       <Typography paragraph={true}>
         I am an aspiring web developer currently enrolled in the University of
         Birmingham Coding Boot Camp powered by Trilogy Education Services LLC.
