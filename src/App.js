@@ -21,6 +21,8 @@ const themeRandomiser = () => {
 
 const randColour = themeRandomiser();
 
+document.querySelector('#theme-color').setAttribute('content', randColour[500]);
+
 const theme = createMuiTheme({
   palette: {
     type: 'dark',
