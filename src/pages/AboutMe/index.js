@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'material-ui-image';
-import profilePic from './images/profile-pic.webp';
+import profilePicWebp from './images/profile-pic.webp';
+import profilePicJpeg from './images/profile-pic.jpg';
 import Grid from '@material-ui/core/Grid';
 import BioSection from './BioSection';
 import { makeStyles } from '@material-ui/core';
@@ -24,7 +25,15 @@ export default function AboutMe() {
     <React.Fragment>
       <Grid container className={classes.root}>
         <Grid item xs={12} md={3} className={classes.profilePic}>
-          <Image src={profilePic} aspectRatio={808 / 1080} />
+          <picture>
+            <source srcset={profilePicWebp} type="image/webp" />
+            <source srcset={profilePicJpeg} type="image/jpeg" />
+            <Image
+              src={profilePicJpeg}
+              alt="Profile Pic"
+              aspectRatio={808 / 1080}
+            />
+          </picture>
         </Grid>
         <Grid item xs={12} md={8} className={classes.bio}>
           <BioSection />

@@ -42,9 +42,13 @@ export default withWidth()(function Portfolio({ width }) {
           cols={getGridListCols()}
           className={classes.gridList}
         >
-          {tileData.map(({ img, title, description, href }) => (
-            <GridListTile key={img}>
-              <img src={img} alt={title} />
+          {tileData.map(({ id, img, title, description, href }) => (
+            <GridListTile key={id}>
+              <picture>
+                <source srcset={img.webp} type="image/webp" />
+                <source srcset={img.jpeg} type="image/jpeg" />
+                <img src={img.jpeg} alt={title} />
+              </picture>
               <GridListTileBar
                 title={title}
                 subtitle={<span>{description}</span>}
