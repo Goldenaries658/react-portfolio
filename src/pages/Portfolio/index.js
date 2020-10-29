@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     height: '80vh',
   },
   gridImg: {
-    width: '100%',
+    height: '100%',
   },
 }));
 

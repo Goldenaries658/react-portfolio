@@ -1,3 +1,5 @@
+import appFactoryWebp from './images/app-factory.webp';
+import appFactoryJpeg from './images/app-factory.jpg';
 import fitnessBuddyWebp from './images/fitness-buddy.webp';
 import fitnessBuddyJpeg from './images/fitness-buddy.jpg';
 import javaScriptQuizWebp from './images/javascript-quiz.webp';
@@ -8,6 +10,15 @@ import weatherAppWebp from './images/weather-app.webp';
 import weatherAppJpeg from './images/weather-app.jpg';
 
 export const tileData = [
+  {
+    img: {
+      webp: appFactoryWebp,
+      jpeg: appFactoryJpeg,
+    },
+    title: 'App Factory',
+    description: 'An app for app ideas',
+    href: 'https://github.com/phillidp1989/App-Factory',
+  },
   {
     img: {
       webp: fitnessBuddyWebp,
