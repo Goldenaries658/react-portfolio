@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     width: 1100,
     height: '80vh',
   },
+  gridImg: {
+    width: '100%',
+  },
 }));
 
 export default withWidth()(function Portfolio({ width }) {
@@ -37,17 +40,17 @@ export default withWidth()(function Portfolio({ width }) {
     <React.Fragment>
       <div className={classes.root}>
         <GridList
+          className={classes.gridList}
           cellHeight={400}
           spacing={7}
           cols={getGridListCols()}
-          className={classes.gridList}
         >
           {tileData.map(({ id, img, title, description, href }) => (
             <GridListTile key={id}>
               <picture>
                 <source srcset={img.webp} type="image/webp" />
                 <source srcset={img.jpeg} type="image/jpeg" />
-                <img src={img.jpeg} alt={title} />
+                <img className={classes.gridImg} src={img.jpeg} alt={title} />
               </picture>
               <GridListTileBar
                 title={title}
