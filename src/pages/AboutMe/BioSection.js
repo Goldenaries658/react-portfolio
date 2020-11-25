@@ -25,15 +25,16 @@ export default function BioSection() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Typography color='secondary' variant="h4" paragraph={true}>Jacob Houston.</Typography>
+      <Typography color="secondary" variant="h4" paragraph={true}>
+        Jacob Houston.
+      </Typography>
       <Typography paragraph={true}>
-        I am an aspiring web developer currently enrolled in the University of
-        Birmingham Coding Boot Camp powered by Trilogy Education Services LLC.
-        learning
         <Typography component="span" color="secondary" className={classes.span}>
-          {' Full Stack Web Development '}
+          {'Full Stack Web Developer '}
         </Typography>
-        and soon to be making my entry into the job market.
+        having recently been awarded a certificate from the University of
+        Birmingham Coding Boot Camp powered by Trilogy Education Services LLC.
+        and eager to continue learning and developing in the industry.
       </Typography>
       <div className={classes.socialIcons}>
         <Tooltip title="Send me an email!">
